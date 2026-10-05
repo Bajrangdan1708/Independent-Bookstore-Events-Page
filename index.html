@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Upcoming events at The Margins independent bookstore.">
+  <title>Events | The Margins Bookshop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="index.html" aria-label="The Margins Bookshop home">
+        <span class="brand-mark" aria-hidden="true">TM</span>
+        <span>The Margins<br><em>Bookshop</em></span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a class="nav-link is-active" href="#events">Events</a>
+        <a class="nav-link" href="#request">Request an event</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="intro shell" aria-labelledby="page-title">
+      <p class="eyebrow">In the shop · Autumn 2026</p>
+      <h1 id="page-title">Good books make<br><em>good company.</em></h1>
+      <p class="intro-copy">Gather with authors, readers, and curious minds at our neighborhood bookshop. Find your next conversation below.</p>
+    </section>
+
+    <section class="events-section shell" id="events" aria-labelledby="events-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">The calendar</p>
+          <h2 id="events-heading">Upcoming events</h2>
+        </div>
+        <p class="result-count" id="result-count" aria-live="polite"></p>
+      </div>
+
+      <form class="filters" id="filters" role="search">
+        <div class="search-field">
+          <label for="event-search">Search events</label>
+          <div class="input-wrap">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 5 5"></path></svg>
+            <input id="event-search" name="search" type="search" placeholder="Search by title, author, or topic">
+          </div>
+        </div>
+        <div class="filter-field">
+          <label for="type-filter">Event type</label>
+          <select id="type-filter" name="type">
+            <option value="all">All types</option>
+            <option value="Author Event">Author events</option>
+            <option value="Book Club">Book clubs</option>
+            <option value="Workshop">Workshops</option>
+            <option value="Reading">Readings</option>
+          </select>
+        </div>
+        <div class="filter-field">
+          <label for="availability-filter">Availability</label>
+          <select id="availability-filter" name="availability">
+            <option value="all">Any availability</option>
+            <option value="Open">Open</option>
+            <option value="Almost full">Almost full</option>
+          </select>
+        </div>
+        <button class="button button-quiet" id="clear-filters" type="reset">Clear filters</button>
+      </form>
+
+      <div class="event-grid" id="event-list">
+        <article class="event-card">
+          <div class="event-card-top"><span class="event-type">Author Event</span><time class="event-date" datetime="2026-10-08">08<small>Oct · Thu</small></time></div>
+          <h3>The Shape of Memory</h3>
+          <p class="event-description">A conversation with novelist Mara Venn about the stories we carry.</p>
+          <div class="event-meta"><span>6:30 PM</span><span>The Reading Room</span></div>
+          <div class="event-footer"><span class="status">Open</span><a class="event-action" href="#request">Request a spot</a></div>
+        </article>
+        <article class="event-card">
+          <div class="event-card-top"><span class="event-type">Book Club</span><time class="event-date" datetime="2026-10-12">12<small>Oct · Mon</small></time></div>
+          <h3>October Pages</h3>
+          <p class="event-description">Our monthly reader circle, featuring one generous, surprising book.</p>
+          <div class="event-meta"><span>7:00 PM</span><span>The Reading Room</span></div>
+          <div class="event-footer"><span class="status almost">Almost full</span><a class="event-action" href="#request">Request a spot</a></div>
+        </article>
+        <article class="event-card">
+          <div class="event-card-top"><span class="event-type">Workshop</span><time class="event-date" datetime="2026-10-18">18<small>Oct · Sun</small></time></div>
+          <h3>Writing the Ordinary</h3>
+          <p class="event-description">A practical morning workshop on finding wonder in everyday details.</p>
+          <div class="event-meta"><span>11:00 AM</span><span>Studio B</span></div>
+          <div class="event-footer"><span class="status">Open</span><a class="event-action" href="#request">Request a spot</a></div>
+        </article>
+        <article class="event-card">
+          <div class="event-card-top"><span class="event-type">Reading</span><time class="event-date" datetime="2026-10-24">24<small>Oct · Sat</small></time></div>
+          <h3>Small Poems, Long Shadows</h3>
+          <p class="event-description">Three local poets read new work and talk about the shape of a line.</p>
+          <div class="event-meta"><span>5:00 PM</span><span>The Reading Room</span></div>
+          <div class="event-footer"><span class="status">Open</span><a class="event-action" href="#request">Request a spot</a></div>
+        </article>
+        <article class="event-card">
+          <div class="event-card-top"><span class="event-type">Author Event</span><time class="event-date" datetime="2026-11-02">02<small>Nov · Mon</small></time></div>
+          <h3>A Field Guide to Elsewhere</h3>
+          <p class="event-description">Travel writer Imani Cole shares a visual diary of overlooked places.</p>
+          <div class="event-meta"><span>6:30 PM</span><span>The Reading Room</span></div>
+          <div class="event-footer"><span class="status almost">Almost full</span><a class="event-action" href="#request">Request a spot</a></div>
+        </article>
+        <article class="event-card">
+          <div class="event-card-top"><span class="event-type">Book Club</span><time class="event-date" datetime="2026-11-09">09<small>Nov · Mon</small></time></div>
+          <h3>Winter Reading List</h3>
+          <p class="event-description">Help us choose the books that will keep us company through winter.</p>
+          <div class="event-meta"><span>7:00 PM</span><span>The Reading Room</span></div>
+          <div class="event-footer"><span class="status">Open</span><a class="event-action" href="#request">Request a spot</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="request-section" id="request" aria-labelledby="request-heading">
+      <div class="shell request-layout">
+        <div class="request-copy">
+          <p class="eyebrow">Bring us a story</p>
+          <h2 id="request-heading">Plan something<br><em>worth gathering for.</em></h2>
+          <p>Want to suggest a book club, author visit, or workshop? Tell us a little about it and our events team will be in touch.</p>
+        </div>
+        <form class="request-form" id="request-form" novalidate>
+          <div class="form-row">
+            <div class="form-control">
+              <label for="requester-name">Your name <span aria-hidden="true">*</span></label>
+              <input id="requester-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="form-control">
+              <label for="requester-email">Email address <span aria-hidden="true">*</span></label>
+              <input id="requester-email" name="email" type="email" autocomplete="email" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-control">
+              <label for="event-title">Event title <span aria-hidden="true">*</span></label>
+              <input id="event-title" name="title" type="text" required>
+            </div>
+            <div class="form-control">
+              <label for="event-date">Preferred date <span aria-hidden="true">*</span></label>
+              <input id="event-date" name="date" type="date" required>
+            </div>
+          </div>
+          <div class="form-control">
+            <label for="event-details">A few details <span class="optional">Optional</span></label>
+            <textarea id="event-details" name="details" rows="4" placeholder="Who is it for? What would make it special?"></textarea>
+          </div>
+          <div class="form-actions">
+            <button class="button button-light" id="submit-request" type="submit">Send request <span aria-hidden="true">↗</span></button>
+            <p class="form-note">We usually reply within two business days.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <span>The Margins Bookshop</span>
+      <span>17 Wren Street · Open daily 9–7</span>
+      <span>© 2026</span>
+    </div>
+  </footer>
+</body>
+</html>
